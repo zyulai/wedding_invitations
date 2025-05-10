@@ -1,0 +1,94 @@
+/**app.wxss**/
+page {
+  --primary-color: #e74c3c;
+  --secondary-color: #ffcccb;
+  --background-color: #fff5f5;
+  --text-color: #333333;
+  --text-color-light: #666666;
+  
+  font-family: 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  font-size: 28rpx;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  min-height: 100vh;
+}
+
+/* 通用容器样式 */
+.container {
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+
+/* 卡片样式 */
+.card {
+  background-color: #ffffff;
+  border-radius: 12rpx;
+  padding: 30rpx;
+  margin: 20rpx 0;
+  box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.05);
+  border: 2rpx solid var(--secondary-color);
+}
+
+/* 按钮样式 */
+button {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-size: 28rpx;
+  border-radius: 50rpx;
+  box-shadow: 0 4rpx 6rpx rgba(231, 76, 60, 0.3);
+}
+
+button::after {
+  border: none;
+}
+
+button[disabled] {
+  background-color: #cccccc !important;
+  color: #ffffff !important;
+}
+
+/* 标题样式 */
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+
+.subtitle {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 16rpx;
+}
+
+/* 喜庆装饰元素 */
+.decoration {
+  position: relative;
+  text-align: center;
+  margin: 20rpx 0;
+}
+
+.decoration::before,
+.decoration::after {
+  content: "❤";
+  color: var(--primary-color);
+  font-size: 24rpx;
+  padding: 0 10rpx;
+}
+
+/* 页面过渡动画 */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

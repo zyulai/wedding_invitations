@@ -1,0 +1,53 @@
+<view class="page">
+  <navigation-bar title="" back="{{false}}" color="#e74c3c" background="#fff"></navigation-bar>
+  <scroll-view class="scrollarea" scroll-y type="list" enable-flex>
+    <view class="container">
+      <view class="map-title">婚礼地址</view>
+      
+      <view class="address-card">
+        <view class="venue-name">{{venueName}}</view>
+        <view class="address-text">{{address}}</view>
+        <view class="contact-info">联系电话：{{contactPhone}}</view>
+      </view>
+      
+      <view class="map-container">
+        <map
+          id="myMap"
+          class="map"
+          longitude="{{longitude}}"
+          latitude="{{latitude}}"
+          scale="{{scale}}"
+          markers="{{markers}}"
+          show-location
+        ></map>
+      </view>
+      
+      <view class="action-buttons">
+        <button class="nav-button" bindtap="openLocation">打开导航</button>
+        <button class="copy-button" bindtap="copyAddress">复制地址</button>
+        <button class="call-button" bindtap="makeCall">拨打电话</button>
+      </view>
+      
+      <view class="traffic-info">
+        <view class="traffic-title">交通指引</view>
+        <!-- 地铁信息已移除 -->
+        <view class="traffic-item">
+          <text class="traffic-icon">🚌</text>
+          <view class="traffic-detail">
+            <text class="traffic-name">公交路线</text>
+            <text class="traffic-desc">{{busInfo}}</text>
+          </view>
+        </view>
+        <view class="traffic-item">
+          <text class="traffic-icon">🚗</text>
+          <view class="traffic-detail">
+            <text class="traffic-name">自驾路线</text>
+            <text class="traffic-desc">{{drivingInfo}}</text>
+          </view>
+        </view>
+      </view>
+      
+      <view class="blessing">期待您的到来</view>
+    </view>
+  </scroll-view>
+</view>

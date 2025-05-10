@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "婚礼请柬",
+  "usingComponents": {
+    "countdown": "/components/countdown/countdown",
+    "navigation-bar": "/components/navigation-bar/navigation-bar"
+  }
+}

@@ -1,0 +1,21 @@
+<view class="countdown-container">
+  <view class="countdown-title">婚礼倒计时</view>
+  <view class="countdown-content">
+    <view class="countdown-item">
+      <text class="countdown-number">{{days}}</text>
+      <text class="countdown-label">天</text>
+    </view>
+    <view class="countdown-item">
+      <text class="countdown-number">{{hours}}</text>
+      <text class="countdown-label">小时</text>
+    </view>
+    <view class="countdown-item">
+      <text class="countdown-number">{{minutes}}</text>
+      <text class="countdown-label">分钟</text>
+    </view>
+    <view class="countdown-item">
+      <text class="countdown-number">{{seconds}}</text>
+      <text class="countdown-label">秒</text>
+    </view>
+  </view>
+</view>

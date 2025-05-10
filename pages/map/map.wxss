@@ -1,0 +1,179 @@
+page {
+  background-color: #fff5f5;
+  font-family: "Microsoft YaHei", sans-serif;
+  height: 100vh;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollarea {
+  flex: 1;
+  height: calc(100vh - 90rpx); /* 减去导航栏的高度 */
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 30rpx;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.map-title {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #e74c3c;
+  text-align: center;
+  margin: 30rpx 0;
+  text-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.1);
+}
+
+.address-card {
+  background-color: white;
+  border-radius: 12rpx;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.05);
+  border: 2rpx solid #ffcccb;
+}
+
+.venue-name {
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #e74c3c;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.address-text {
+  font-size: 28rpx;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20rpx;
+  line-height: 1.5;
+}
+
+.contact-info {
+  font-size: 28rpx;
+  color: #666;
+  text-align: center;
+}
+
+.map-container {
+  width: 100%;
+  height: 500rpx;
+  margin-bottom: 30rpx;
+  border-radius: 12rpx;
+  overflow: hidden;
+  box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.1);
+  border: 2rpx solid #ffcccb;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30rpx;
+}
+
+.nav-button,
+.copy-button,
+.call-button {
+  flex: 1;
+  margin: 0 10rpx;
+  background-color: #e74c3c;
+  color: white;
+  font-size: 28rpx;
+  padding: 15rpx 0;
+  border-radius: 50rpx;
+  box-shadow: 0 4rpx 6rpx rgba(231, 76, 60, 0.3);
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.nav-button::after,
+.copy-button::after,
+.call-button::after {
+  border: none;
+}
+
+.nav-button {
+  background-color: #e74c3c;
+}
+
+.copy-button {
+  background-color: #ff9966;
+}
+
+.call-button {
+  background-color: #ff7979;
+}
+
+.traffic-info {
+  background-color: white;
+  border-radius: 12rpx;
+  padding: 30rpx;
+  margin: 30rpx 0;
+  box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.05);
+  border: 2rpx solid #ffcccb;
+}
+
+.traffic-title {
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #e74c3c;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.traffic-item {
+  display: flex;
+  margin-bottom: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx dashed rgba(255, 204, 203, 0.5);
+}
+
+.traffic-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.traffic-icon {
+  font-size: 40rpx;
+  margin-right: 20rpx;
+}
+
+.traffic-detail {
+  flex: 1;
+}
+
+.traffic-name {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 10rpx;
+}
+
+.traffic-desc {
+  font-size: 26rpx;
+  color: #666;
+  line-height: 1.5;
+}
+
+.blessing {
+  text-align: center;
+  font-size: 30rpx;
+  color: #e74c3c;
+  font-weight: bold;
+  margin: 40rpx 0 20rpx;
+  text-shadow: 0 1rpx 2rpx rgba(0, 0, 0, 0.1);
+}

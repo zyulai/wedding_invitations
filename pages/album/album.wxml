@@ -1,0 +1,34 @@
+<navigation-bar title="" back="{{false}}" color="#e74c3c" background="#fff"></navigation-bar>
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    <view class="album-title">我们的美好瞬间</view>
+    
+    <!-- 轮播相册 -->
+    <view class="swiper-container">
+      <swiper class="swiper" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{500}}" circular="{{true}}" indicator-color="rgba(255, 255, 255, .3)" indicator-active-color="#e74c3c">
+        <block wx:for="{{bannerPhotos}}" wx:key="index">
+          <swiper-item>
+            <image src="{{item.url}}" class="swiper-image" mode="aspectFill" bindtap="previewImage" data-index="{{index}}" data-type="banner"></image>
+            <view class="swiper-text">{{item.desc}}</view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+    <!-- 照片网格 -->
+    <view class="grid-container">
+      <view class="grid-title">照片墙</view>
+      <view class="photo-grid">
+        <block wx:for="{{photos}}" wx:key="index">
+          <view class="grid-item">
+            <image src="{{item.url}}" class="grid-image" mode="aspectFill" bindtap="previewImage" data-index="{{index}}" data-type="photos"></image>
+          </view>
+        </block>
+      </view>
+    </view>
+    
+    <view class="album-footer">
+      <view class="footer-text">爱的记忆，永远珍藏</view>
+    </view>
+  </view>
+</scroll-view>

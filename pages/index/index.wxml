@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<navigation-bar title="" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    <view class="header">
+  <image
+    class="wedding-photo"
+    src="https://wedding.tos-cn-shanghai.volces.com/resized_images/vertical_openai.png"
+    mode="aspectFill"
+    style="width:100%;"
+  />
+  </view>
+    <view class="content">
+      <view class="info-card">
+        <view class="info-title">嗨</view>
+        <view class="info-text">当您看到这篇文章的时候</view>
+        <view class="info-text">我们的婚礼已经进入倒计时啦～</view>
+        <view class="info-item">
+          <view class="info-label">时间</view>
+          <view class="info-value">{{weddingTime}}</view>
+        </view>
+        <view class="info-item">
+          <view class="info-label">地点</view>
+          <view class="info-value">{{weddingLocation}}</view>
+        </view>
+        <view class="info-item">
+          <view class="info-label">电话</view>
+          <view class="info-value">{{contactPhone}}</view>
+        </view>
+      </view>
+      
+      <countdown target-date="{{weddingDateTime}}"></countdown>
+      
+      <view class="blessing-card">
+        <view class="blessing-title">在这不平凡的日子</view>
+        <view class="blessing-text">我们决定携手踏进人生的新阶段</view>
+        <view class="blessing-text">成为彼此生命中最重要的人</view>
+        <view class="blessing-text">真诚地邀请各位亲朋好友</view>
+        <view class="blessing-text">见证幸福 共享美好</view>
+
+      </view>
+    </view>
+    
+    <view class="footer">
+      <view class="footer-text">期待您的光临</view>
+    </view>
+  </view>
+</scroll-view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "婚礼导航",
+  "usingComponents": {
+    "navigation-bar": "/components/navigation-bar/navigation-bar"
+  }
+}
